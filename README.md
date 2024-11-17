@@ -18,4 +18,4 @@ Este proyecto es una pagina web de una tienda. Las personas pueden agregar produ
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/usuario/proyecto-carrito.git
+   git clone https://github.com/jenn0906/Ecommerce.git
