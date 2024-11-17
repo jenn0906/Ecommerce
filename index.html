@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Place your kit's code here -->
+    <!-- <script src="https://kit.fontawesome.com/0f48d8c00d.js"></script> -->
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fundacion salvando Huellas</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fondo-nav sticky-top"
+      id="menu-navegacion"
+    >
+      <div class="container-fluid my-1">
+        <a href="#inicio active" class="navbar-brand" style="margin-left: 95px">
+          <img src="img/Logo.png" alt="" class="img-fluid" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- nav bar pantallas gandes -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+          style="margin-right: 100px"
+        >
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#intro" class="nav-link text-white">Fundación</a>
+            </li>
+            <li class="nav-item">
+              <a href="#llamado-accion" class="nav-link text-white">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicios" class="nav-link text-white">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#galeria" class="nav-link text-white">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonios" class="nav-link text-white">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link text-white">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="compras.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Imagen de cabecera - usar jumbotron-->
+    <section id="inicio" class="text-center">
+      <div class="jumbotron pb-5">
+        <h1 class="display-4"><strong>Fundación Salvando Huellas</strong></h1>
+        <p class="lead">
+          Es un compromiso con aquellos que no pueden defenderse por sí mismos.
+          Sabemos que, aunque cada huella que dejamos en el camino pueda parecer
+          pequeña, juntas pueden construir un sendero de esperanza y
+          transformación para miles de animales que merecen una segunda
+          oportunidad.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg" role="button"
+          >Más Información</a
+        >
+      </div>
+    </section>
+
+    <!--Sección intro-->
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Texto Justificado</title>
+            <style>
+              p {
+                text-align: justify; /* Justifica el texto */
+                line-height: 1.6; /* Aumenta el espacio entre las líneas */
+              }
+            </style>
+            <h2 class="mt-5" id="nombrefundacion">
+              Fundación Salvando Huellas
+            </h2>
+            <p class="mt-5" id="contenidofundacion">
+              <strong>Vision </strong>Ser una organización líder en la
+              protección animal, creando un mundo donde cada huella, por pequeña
+              que sea, sea un paso hacia la justicia y el respeto hacia todos
+              los seres vivos. Queremos transformar la vida de los animales y de
+              las personas, creando una sociedad que valore y proteja a los
+              animales como miembros fundamentales de nuestro entorno.
+            </p>
+            <p></p>
+            <p class="mt-5" id="contenidofundacion">
+              <strong> Mision </strong> Salvar las huellas de los animales más
+              vulnerables, rescatándolos, proporcionándoles un hogar temporal
+              seguro, y ayudándolos a encontrar familias responsables que les
+              ofrezcan una vida llena de amor. Además, trabajamos en la
+              sensibilización de la comunidad para erradicar el abandono, el
+              maltrato y promover una convivencia armoniosa con los animales.
+            </p>
+            <p>
+              <button class="btn btn-outline-primary btn-lg text-center">
+                Más Información
+              </button>
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <img class="img-thumbnail img-fluid" src="img/inicio.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--LLamado a la accion-->
+    <section id="llamado-accion">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-12 text-center text-white">
+            <h1 class="mt-5">
+              <strong>Historia de la Fundación Salvando Huellas</strong>
+            </h1>
+            <p class="mt-5">
+              Fundación Salvando Huellas nació del compromiso y la pasión por
+              los animales que, día a día, luchan por sobrevivir en las calles,
+              por un futuro mejor, o por encontrar un hogar lleno de amor.
+              Nuestra fundación fue creada por un grupo de personas con una
+              visión clara: salvar las huellas de aquellos que no tienen voz y
+              darles una oportunidad de vivir una vida digna y llena de afecto.
+              La idea surgió cuando un pequeño grupo de voluntarios,
+              sensibilizados por la creciente población de animales abandonados
+              y maltratados en las calles, decidió que ya era hora de actuar.
+              Sabían que cada animal, por pequeño que fuera su rescate, dejaba
+              una huella en el camino hacia un mundo mejor. Así, "Salvando
+              Huellas" se fundó como un refugio para aquellos animales que más
+              lo necesitan: los más vulnerables, los olvidados, los que no
+              tienen a nadie que luche por ellos.
+            </p>
+            <h2>¡Adopta y no compres!</h2>
+            <button class="btn btn-light btn-lg text-center mb-5">
+              Más Información
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Servicios-->
+    <section id="servicios">
+      <div class="container">
+        <h1 class="text-center mt-5"><strong>Nuestros Servicios</strong></h1>
+
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-4 text-center">
+            <h2 class="mt-5">
+              <i class="fas fa-paint-brush"></i><br />
+              Refugio y Adopción Responsable
+            </h2>
+            <p class="mt-5">
+              <strong>Objetivo</strong> Ofrecer un espacio seguro y adecuado
+              para animales abandonados o maltratados, y promover la adopción
+              responsable.
+            </p>
+            <p>
+              <strong>Servicios:</strong> Refugio temporal para perros y gatos
+              sin hogar. Campañas de adopción responsable y concientización.
+              Charlas educativas sobre la tenencia responsable de mascotas.
+            </p>
+
+            <p>
+              <strong>Actividades:</strong> Jornadas de adopción en parques o
+              espacios públicos.Programas de esterilización para controlar la
+              población animal. Capacitación para cuidadores de refugios
+              locales.
+            </p>
+            <br />
+            <button class="btn btn-info text-center mb-5">
+              Ver más <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+
+          <div class="col-sm-12 col-md-4 text-center">
+            <h2 class="mt-5">
+              <i class="fas fa-search-dollar"></i><br />
+              Salud y Bienestar Animal
+            </h2>
+            <p class="mt-5">
+              <strong>Objetivo</strong> Brindar atención médica a animales de la
+              calle y de familias de bajos recursos.
+            </p>
+            <p>
+              <strong>Servicios:</strong> Consultas veterinarias gratuitas o a
+              precios bajos. Vacunación y desparacitación masiva de animales
+              comunitarios. Campañas de prevención y cuidado de enfermedades
+              comunes en animales (parvovirus, leptospirosis, etc.).
+            </p>
+
+            <p>
+              <strong>Actividades:</strong> Operativos de salud animal en zonas
+              vulnerables. Distribución de alimentos y medicinas a refugios y
+              animales callejeros. Talleres educativos sobre cómo cuidar la
+              salud de las mascotas.
+            </p>
+            <br />
+            <button class="btn btn-info text-center mb-5">
+              Ver más <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+
+          <div class="col-sm-12 col-md-4 text-center">
+            <h2 class="mt-5">
+              <i class="fas fa-bullhorn"></i><br />
+              Voluntariado, educación y Sensibilización
+            </h2>
+            <p class="mt-5">
+              <strong>Objetivo</strong> Fomentar el respeto y cuidado hacia los
+              animales desde una edad temprana, Crear una comunidad activa de
+              voluntarios que ayuden en diversas actividades relacionadas con el
+              bienestar animal,Promover la legislación y políticas públicas que
+              protejan los derechos de los animales.
+            </p>
+            <p>
+              <strong>Servicios:</strong> Programas educativos en escuelas sobre
+              bienestar animal y derechos de los animales. Crear peticiones para
+              mejorar las leyes de bienestar animal. Formación de voluntarios en
+              temas de rescate, primeros auxilios para animales y socialización.
+              Creación de una red de voluntarios que pueda proporcionar hogares
+              temporales a los animales hasta su adopción.
+            </p>
+
+            <p>
+              <strong>Actividades:</strong> Capacitación a voluntarios sobre
+              cómo promover la adopción y cuidados de los animales. Colaboración
+              con otras organizaciones para presionar por cambios legislativos
+              Talleres interactivos con niños, donde puedan aprender a cuidar a
+              los animales de manera divertida
+            </p>
+            <br />
+            <button class="btn btn-info text-center mb-5">
+              Ver más <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Galería-->
+    <section id="galeria">
+      <div class="row mt-5 no-gutters">
+        <div class="col-sm-12 col-md-3">
+          <img src="img/galeria4.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <img src="img/galeria1.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <img src="img/galeria2.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <img src="img/galeria3.jpg" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonios-->
+    <section id="testimonios">
+      <div class="container mb-5">
+        <h1 class="text-center mt-5">Testimonios</h1>
+        <div class="row mt-5">
+          <div class="col-sm12 col-md-6 text-center">
+            <div class="card">
+              <div class="card-body">
+                <p class="mt-5">
+                  Hace un año, adoptamos a Max, un perro que encontró su hogar
+                  con nosotros después de ser rescatado de la calle. Al
+                  principio, estaba muy asustado, pero con paciencia y amor, Max
+                  se ha convertido en el miembro más querido de nuestra familia.
+                  Hoy es nuestro compañero fiel, y no podemos imaginar nuestra
+                  vida sin él.
+                </p>
+                <cite><strong>Familia Torres</strong></cite>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm12 col-md-6 text-center">
+            <div class="card">
+              <div class="card-body">
+                <p class="mt-5">
+                  "Ser voluntario en Salvando Huellas ha sido una de las
+                  experiencias más gratificantes de mi vida. He visto de primera
+                  mano cómo un acto de amor puede transformar la vida de un
+                  animal. No solo ayudamos a los perros y gatos, sino que
+                  también cambiamos nuestras propias perspectivas sobre lo que
+                  significa ser responsable con las mascotas."
+                </p>
+                <cite><strong>Maria</strong></cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto">
+      <div class="container py-5">
+        <h2 class="text-center mb-4"><strong>¡Contáctanos!</strong></h2>
+
+        <form id="formulario-contacto">
+          <!-- Nombre -->
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Ingresa tu nombre"
+              required
+            />
+          </div>
+
+          <!-- Correo electrónico -->
+          <div class="form-group mt-3">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Ingresa tu email"
+              required
+            />
+          </div>
+
+          <!-- Mensaje -->
+          <div class="form-group mt-3">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje aquí"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Botón de Enviar -->
+          <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+        </form>
+
+        <!-- Alertas de confirmación -->
+        <div id="alerta" class="mt-3" style="display: none">
+          <div class="alert alert-success" role="alert">
+            ¡Gracias por contactarnos! Tu mensaje ha sido enviado.
+          </div>
+        </div>
+
+        <!-- Alerta de error -->
+        <div id="alerta-error" class="mt-3" style="display: none">
+          <div class="alert alert-danger" role="alert">
+            Hubo un error al enviar el formulario. Por favor, intenta
+            nuevamente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script>
+      // Obtiene el formulario y los elementos necesarios
+      const formulario = document.getElementById("formulario-contacto");
+      const alertaExito = document.getElementById("alerta");
+      const alertaError = document.getElementById("alerta-error");
+
+      // Función que maneja el envío del formulario
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Verificamos que los campos del formulario no estén vacíos
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        if (nombre && email && mensaje) {
+          // Si todo está bien, mostramos la alerta de éxito
+          alertaExito.style.display = "block"; // Mostrar mensaje de éxito
+          alertaError.style.display = "none"; // Ocultar mensaje de error
+
+          // Opcionalmente, ocultamos el formulario
+          formulario.style.display = "none"; // Ocultar el formulario después de enviar
+
+          // Limpiamos los campos del formulario
+          formulario.reset();
+        } else {
+          // Si hay algún campo vacío, mostramos la alerta de error
+          alertaError.style.display = "block"; // Mostrar mensaje de error
+          alertaExito.style.display = "none"; // Ocultar mensaje de éxito
+        }
+      });
+    </script>
+
+    <!--Footer-->
+    <footer>
+      <section id="footer">
+        <div class="container py-3">
+          <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 tex-center text-blue">
+              <h3 class="mt-5" id="nosotrostitle">Nosotros</h3>
+              <p class="mt-5" id="nosotros">
+                Hoy somos una fundación que ofrece no solo un espacio seguro
+                para los animales, sino también una comunidad de personas
+                comprometidas con la causa animal. Nos dedicamos a salvar vidas,
+                educar sobre el respeto y el bienestar animal, y promover la
+                adopción responsable, para que cada animal pueda encontrar un
+                hogar lleno de amor.
+              </p>
+              <p>
+                @2024 -Fundacion Salvando Huellas - Todos los derechos
+                reservador
+              </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 tex-center text-blue">
+              <h3 class="mt-5" id="contacto">Contáctanos</h3>
+              <p class="mt-5">
+                <i class="fas fa-map-marker-alt" id="contacto"></i>
+                Calle 70 -24 Cali-Colombia
+                <br />
+                <i class="fas fa-phone" id="contacto"></i>
+                313 505 7392
+              </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 tex-center text-blue">
+              <h3 class="mt-5">Suscríbete</h3>
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Ingresa tu email"
+                  />
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  Suscríbete
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

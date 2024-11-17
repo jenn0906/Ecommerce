@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Place your kit's code here -->
+    <!--  -<script src="https://kit.fontawesome.com/0f48d8c00d.js"></script>-->
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+
+    <title>1000 jovenes programadores</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fondo-nav sticky-top"
+      id="menu-navegacion2"
+    >
+      <div class="container-fluid my-1">
+        <a href="index.html" class="navbar-brand" style="margin-left: 95px">
+          <img src="img/Logo.png" alt="" class="img-fluid" id="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent2"
+          aria-controls="navbarSupportedContent2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent2"
+          style="margin-right: 100px"
+        >
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#test" class="nav-link text-white">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gatos" class="nav-link text-white">Gatos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#perros" class="nav-link text-white">Perros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#comida" class="nav-link text-white">Comidas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#arena" class="nav-link text-white">Arena</a>
+            </li>
+            <li class="nav-item">
+              <a href="#comedero" class="nav-link text-white">Comedero</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="margin-left: 100px; margin-top: 20px">
+      <button id="filtrarNombre" class="btn btn-secondary">
+        Filtrar por Nombre
+      </button>
+      <button id="filtrarPrecio" class="btn btn-secondary">
+        Filtrar por Precio
+      </button>
+    </div>
+
+    <section id="test" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Accesorios</h2>
+      <div class="card-group">
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Placa de metal"
+          data-price="2000"
+        >
+          <img
+            src="/img/placa.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Placa de metal</h5>
+            <p class="card-text">
+              Etiqueta de perro personalizada, etiquetas de identificación
+              grabadas con nombre de acero inoxidable para Collar de perro,
+              colgante de placa con nombre antipérdida para mascotas
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$2.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Placa de metal', 2000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Cepillo electrico"
+          data-price="$20.000"
+        >
+          <img
+            src="/img/cepillo.jpg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Cepillo electrico</h5>
+            <p class="card-text">
+              Cepillo eléctrico 3 en 1 para perros y gatos, cepillo de vapor de
+              limpieza, peine de masaje en aerosol, mango retráctil, cepillo de
+              depilación para aseo de mascotas
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$20.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Cepillo electrico', 20000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Collar"
+          data-price="$10.000"
+        >
+          <img
+            src="/img/collar.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Collar</h5>
+            <p class="card-text">
+              Collar con anillo de campana de seguridad ajustable, huella de
+              dibujos animados para mascotas, accesorios coloridos para perros,
+              cachorros y gatos, Collar para gatitos, Collar para mascotas con
+              campana
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$10.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Collar', 10000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gatos  -->
+
+    <section id="gatos" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Gatos</h2>
+      <div class="card-group">
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Pelota rascadora"
+          data-price="$5.000"
+        >
+          <img
+            src="/img/gato1.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Pelota rascadora</h5>
+            <p class="card-text">
+              Pelota rascadora de Sisal para gatos, juguete interactivo de
+              entrenamiento para gatitos, suministros para gatos, juguete
+              interactivo de plumas, 1 ud
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$5.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Pelota rascadora', 5000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Cama para gatos"
+          data-price="$60.000"
+        >
+          <img
+            src="/img/gatos2.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Cama para gatos</h5>
+            <p class="card-text">
+              Cama súper para gatos, casa cálida para mascotas, cojín de cueva
+              para gatitos, casa para gatos, cesta para perros, tienda de
+              campaña para perros pequeños, suministros para cama para gatos
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$60.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Cama para gatos', 60000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perros -->
+
+    <section id="perros" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Perros</h2>
+      <div class="card-group">
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Correa reflectante para perros"
+          data-price="$15.000"
+        >
+          <img
+            src="/img/perro1.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Correa reflectante para perro</h5>
+            <p class="card-text">
+              Correa reflectante para perro, Correa fuerte para mascotas,
+              grande, pequeño, mediano, arrastre, remolque, Golden Retriever
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$15.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Correa reflectante para perro', 15000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Cama para perros"
+          data-price="$50.000"
+        >
+          <img
+            src="/img/perro2.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Cama para perros</h5>
+            <p class="card-text">
+              sofá de peluche para perros, cama para perros cómoda y
+              desmontable, nido universal para mascotas mediano y grande
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$50.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Cama para perros', 50000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comidas  -->
+
+    <section id="comida" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Comidas</h2>
+      <div class="card-group">
+        <div
+          class="card m-5 justify-content-center align-items-center"
+          data-name="Cat adultos"
+          data-price="$75.000"
+        >
+          <img
+            src="/img/comida1.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">
+              Alimento Max Cat Adultos Pollo & Arroz
+            </h5>
+            <p class="card-text">
+              Trae ingredientes seleccionados por especialistas para
+              proporcionarle una alimentación rica y balanceada a tu gatito.
+              Rico en proteína y vitaminas A, B12, C y D, este alimento ayuda
+              directamente en el tracto urinario, en la visión y en el corazón
+              de tu compañero. A tu hijo le va a encantar. ¡Pruébalo!. 3 kILOS
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$75,000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('  Alimento Max Cat Adultos Pollo & Arroz', 75000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card m-5 justify-content-center align-items-center">
+          <img
+            src="/img/comida2.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">
+              Alimento Para Perro Chunky Adulto Nuggets Pollo - 2 kg
+            </h5>
+            <p class="card-text">
+              Verdadera carne de pollo como fuente principal de proteina y
+              nuggets rellenos con pollo. dh pack que brinda proteccion integral
+              para el tracto gastrointestinal.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$15,000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('  Alimento Para Perro Chunky Adulto Nuggets Pollo - 2 kg', 15000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arenas  -->
+
+    <section id="arena" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Arena</h2>
+      <div class="card-group">
+        <div class="card m-5 justify-content-center align-items-center">
+          <img
+            src="/img/arena1.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">Foficat Arena Para Gato - 10 Kg</h5>
+            <p class="card-text">
+              Arena super aglomerante de fina granulación, 0% de humedad, 100%
+              natural y libre de polvo en un 99%. Neutraliza y absorbe
+              rápidamente los olores de las heces y la orina de los gatos con su
+              esencia a Manzana Verde y controla la humedad de las mismas.
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$52,000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Foficat Arena Para Gato - 10 Kg', 52000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card m-5 justify-content-center align-items-center">
+          <img
+            src="/img/arena2.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">
+              Arena Para Gato Sepicat Agromerante - 4.8 Kg
+            </h5>
+            <p class="card-text">
+              Arena sanitaria para gatos - aglomerante - control de liberación
+              de polvo, control de olores, con una partícula apta para gatos con
+              sensibilidad en almohadillas plantares -con 20% de eficiencia
+              adicional . Es de ARCILLA HORMITA
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$70.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito(' Arena Para Gato Sepicat Agromerante - 4.8 Kg', 70000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comedero  -->
+
+    <section id="comedero" class="tex-center">
+      <h2 style="margin-left: 100px; margin-top: 50px">Comedero</h2>
+      <div class="card-group">
+        <div class="card m-5 justify-content-center align-items-center">
+          <img
+            src="/img/comedero1.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">
+              Comedero Ascensor Para Gato Distrito Animal Madera Pino
+            </h5>
+            <p class="card-text">
+              FABRICADO EN MADERA PINO DE LA MEJOR CALIDAD, COCAS EN ACERO
+              INOXIDABLE 10" MEDIDA DE LA COCA, TALLA S APTO PARA GATO. • FÁCIL
+              DE LAVAR EN CASA. • TALLA S
+            </p>
+            <p class="card-text" id="precio">
+              <small class="text-body-secondary">$120.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Comedero Ascensor Para Gato Distrito Animal Madera Pino', 120000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+        <div class="card m-5 justify-content-center align-items-center">
+          <img
+            src="/img/comedero2.jpeg"
+            class="card-img-top img-fluid"
+            alt="producto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="">
+              Comedero Para Perro Distrito Animal Max Madera Pino - L
+            </h5>
+            <p class="card-text">
+              FABRICADO EN MADERA PINO DE LA MEJOR CALIDAD, COCAS EN ACERO
+              INOXIDABLE 20" MEDIDA DE LA COCA, TALLA XL APTO PARA PERRO RAZA
+              GRANDE. • FÁCIL DE LAVAR EN CASA.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">$120.000</small>
+            </p>
+            <button
+              class="btn btn-primary"
+              onclick="agregarAlCarrito('Comedero Para Perro Distrito Animal Max Madera Pino - L', 120000)"
+            >
+              Agregar al Carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <h2 class="mt-5" id="carrito-items">Carrito de Compras</h2>
+      <div id="carrito-items" class="cart-items">
+        <p></p>
+      </div>
+      <h3>Total: $<span id="total">0.00</span></h3>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
