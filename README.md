@@ -19,3 +19,10 @@ Este proyecto es una pagina web de una tienda. Las personas pueden agregar produ
 1. Clona este repositorio en tu máquina local:
    ```bash
    git clone https://github.com/jenn0906/Ecommerce.git
+
+
+## Documentación Técnica
+
+- El archivo principal de JavaScript es `script.js`, donde se manejan todas las interacciones del carrito de compras.
+- Se utiliza un `Array` llamado `carrito` para almacenar los productos seleccionados por el usuario.
+- Las funciones más importantes incluyen `agregarAlCarrito`, `modificarCantidad`, `eliminarProducto`, y `actualizarCarrito`.
